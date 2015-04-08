@@ -1,0 +1,23 @@
+{
+  "name": "operation-wave4",
+  "version": "0.0.1",
+  "description": "Lookup wave 4 using Amazon MWS",
+  "main": "index.js",
+  "scripts": {
+    "install": "mv config.js.template config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "wave4",
+    "amiibo"
+  ],
+  "author": "Adam Schodde <sparky1010+github@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws2": "^0.2.1",
+    "dataobject-parser": "^1.0.6",
+    "request": "^2.55.0",
+    "twilio": "^1.11.1"
+  }
+}
