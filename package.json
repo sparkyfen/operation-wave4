@@ -18,6 +18,7 @@
     "aws2": "^0.2.1",
     "dataobject-parser": "^1.0.6",
     "request": "^2.55.0",
-    "twilio": "^1.11.1"
+    "twilio": "^1.11.1",
+    "xml2json": "^0.6.1"
   }
 }
