@@ -23,8 +23,10 @@ $ vim ~/.profile
 $ vim ~/.bashrc
 export VARIABLE_NAME=value
 # Save file.
-# Start script
+# Start script normally
 $ npm start
+# Optionally, start script with Forever (https://github.com/foreverjs/forever)
+$ forever start index.js
 ```
 
 License
