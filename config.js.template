@@ -4,21 +4,21 @@ module.exports = {
   twilio: {
     sid: process.env.OPERATION_WAVE4_TWILIO_SID || '',
     authToken: process.env.OPERATION_WAVE4_TWILIO_AUTHTOKEN || '',
-    to: process.env.OPERATION_WAVE4_TWILIO_TO || '',
-    from: OPERATION_WAVE4_TWILIO_FROM || ''
+    to: process.env.OPERATION_WAVE4_TWILIO_TO || '', // Use format +<Country Code><Number> (Example: +11234567891)
+    from: OPERATION_WAVE4_TWILIO_FROM || '' // Use format +<Country Code><Number> (Example: +11234567891)
   },
   amazon: {
     us: {
       host: 'mws.amazonservices.com',
       marketplace: 'ATVPDKIKX0DER',
-      sellerId: process.env.OPERATION_WAVE4_AMAZON_US_SELLER_ID || '',
+      sellerId: process.env.OPERATION_WAVE4_AMAZON_US_SELLER_ID || '', // https://developer.amazonservices.com/
       accessKey: process.env.OPERATION_WAVE4_AMAZON_US_ACCESS_KEY || '',
       secretKey: process.env.OPERATION_WAVE4_AMAZON_US_SECRET_KEY || ''
     },
     ca: {
       host: 'mws.amazonservices.ca',
       marketplace: 'A2EUQ1WTGCTBG2',
-      sellerId: process.env.OPERATION_WAVE4_AMAZON_CA_SELLER_ID || '',
+      sellerId: process.env.OPERATION_WAVE4_AMAZON_CA_SELLER_ID || '', // https://developer.amazonservices.ca/
       accessKey: process.env.OPERATION_WAVE4_AMAZON_CA_ACCESS_KEY || '',
       secretKey: process.env.OPERATION_WAVE4_AMAZON_CA_SECRET_KEY || ''
     }
